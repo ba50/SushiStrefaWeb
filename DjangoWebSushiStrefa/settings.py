@@ -5,11 +5,11 @@ Django settings for DjangoWebSushiStrefa project.
 DEBUG = True
 
 ALLOWED_HOSTS = (
-    'localhost',
+    '*',
 )
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('Bartłomiej Jasik', 'barjas02@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -98,7 +98,7 @@ SECRET_KEY = 'n(bd1f1c%e8=_xad02x5qtfn%wgwpi492e$8_erx+d)!tpeoim'
 #TEMPLATE_LOADERS = (
 #    'django.template.loaders.filesystem.Loader',
 #    'django.template.loaders.app_directories.Loader',
-##     'django.template.loaders.eggs.Loader',
+#     'django.template.loaders.eggs.Loader',
 #)
 
 TEMPLATES = [
@@ -130,6 +130,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
